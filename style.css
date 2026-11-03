@@ -3,7 +3,44 @@
     margin: 0;
     padding: 0;
 }
+.site-header-hero {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 3rem 1rem 2rem 1rem;
+    background: rgba(11, 15, 25, 0.95);
+    border-bottom: 1px solid rgba(0, 255, 204, 0.2);
+    text-align: center;
+}
 
+.hero-logo-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1.2rem;
+    margin-bottom: 2rem;
+}
+
+.large-brand-logo {
+    width: 220px; /* سایز بزرگ و مناسب برای نمایش تمام جزئیات لوگو */
+    max-width: 100%;
+    height: auto;
+    border-radius: 16px;
+    object-fit: cover;
+    border: 1px solid rgba(0, 255, 204, 0.4);
+    box-shadow: 0 0 30px rgba(0, 255, 204, 0.35);
+}
+
+.hero-logo-container .brand-title {
+    font-family: 'JetBrains Mono', monospace;
+    font-size: 2.2rem;
+    font-weight: 700;
+    color: #ffffff;
+    letter-spacing: 2px;
+    text-shadow: 0 0 12px rgba(0, 255, 204, 0.5);
+    margin: 0;
+}
 :root {
     --bg-dark: #030712;
     --surface: rgba(11, 18, 32, 0.78);
@@ -32,9 +69,6 @@ body {
     overflow-x: hidden;
 }
 
-/* =======================================================
-   بک‌گراند موشن با صفر و یک‌های کاملاً واضح و درخشان
-   ======================================================= */
 .cyber-motion-bg {
     position: fixed;
     inset: 0;
@@ -62,7 +96,6 @@ body {
     background: radial-gradient(circle, rgba(0, 255, 136, 0.09) 0%, transparent 70%);
 }
 
-/* ستون‌های صفر و یک پررنگ و نئونی */
 .binary-rain {
     position: absolute;
     inset: 0;
@@ -93,7 +126,6 @@ body {
     100% { transform: translateY(110vh); opacity: 0; }
 }
 
-/* افکت نور تعاملی زیر موس */
 .mouse-glow {
     position: fixed;
     width: 450px;
@@ -105,7 +137,6 @@ body {
     z-index: -2;
 }
 
-/* نوار بالا */
 .top-bar-wrapper {
     position: sticky;
     top: 16px;
@@ -217,7 +248,6 @@ main {
     margin: 0 auto;
 }
 
-/* سکشن‌ها */
 .hero,
 .content-section {
     margin-bottom: 28px;
@@ -253,33 +283,11 @@ h2 {
     font-weight: 800;
 }
 
-/* بخش Hero */
 .hero-grid {
     display: grid;
     grid-template-columns: 1.25fr 0.95fr;
     gap: 32px;
     align-items: center;
-}
-
-.terminal-badge {
-    display: inline-flex;
-    align-items: center;
-    gap: 8px;
-    background: rgba(0, 255, 136, 0.06);
-    border: 1px solid var(--border-accent);
-    color: var(--neon-green);
-    padding: 5px 14px;
-    border-radius: 30px;
-    font-size: 0.84rem;
-    margin-bottom: 16px;
-}
-
-.terminal-badge .dot {
-    width: 8px;
-    height: 8px;
-    border-radius: 50%;
-    background: var(--neon-green);
-    box-shadow: 0 0 10px var(--neon-green);
 }
 
 .gradient-text {
@@ -344,7 +352,6 @@ h2 {
     transform: translateY(-2px);
 }
 
-/* ترمینال */
 .terminal-window {
     background: #04060b;
     border: 1px solid rgba(0, 255, 136, 0.25);
@@ -380,7 +387,6 @@ h2 {
 .t-out { color: #94a3b8; padding-left: 14px; }
 .t-active { color: var(--neon-green); font-weight: 600; }
 
-/* آمار */
 .stats-bar {
     margin-top: 34px;
     padding-top: 26px;
@@ -410,7 +416,6 @@ h2 {
     color: var(--text-muted);
 }
 
-/* مهارت‌ها، مدارک و پروژه‌ها */
 .skills-grid, .certs-grid, .projects-grid, .edu-grid {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(min(100%, 250px), 1fr));
@@ -455,7 +460,6 @@ h2 {
     font-family: 'JetBrains Mono', monospace;
 }
 
-/* تایم‌لاین */
 .timeline-container {
     position: relative;
     padding-inline-start: 24px;
@@ -506,7 +510,6 @@ h2 {
 ul { padding-inline-start: 18px; color: #cbd5e1; }
 li { margin-bottom: 6px; }
 
-/* مدرک */
 .cert-card {
     display: flex;
     flex-direction: column;
@@ -580,15 +583,17 @@ li { margin-bottom: 6px; }
     font-family: 'JetBrains Mono', monospace;
 }
 
-/* ارتباط */
 .contact-links {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(min(100%, 220px), 1fr));
+    grid-template-columns: repeat(auto-fit, minmax(min(100%, 240px), 1fr));
     gap: 12px;
     margin-top: 16px;
 }
 
 .contact-item {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
     padding: 12px 16px;
     background: var(--surface-card);
     color: var(--text-primary);
@@ -599,6 +604,7 @@ li { margin-bottom: 6px; }
     font-size: 0.85rem;
     transition: 0.25s;
     text-align: center;
+    min-height: 48px;
 }
 
 .contact-item:hover {
@@ -606,7 +612,6 @@ li { margin-bottom: 6px; }
     background: rgba(0, 255, 136, 0.05);
 }
 
-/* مودال */
 .modal {
     display: none;
     position: fixed;
