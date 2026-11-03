@@ -100,8 +100,9 @@
 
     <main>
         <section id="home" class="hero" style="padding-top: 2rem;">
+            <!-- استفاده از لوگوی اصلی با نام logo.png -->
             <div style="text-align: center; margin-bottom: 2.5rem;">
-                <img src="logo-removebg-preview.png" alt="Mahtab Kamali Logo" class="clean-logo">
+                <img src="logo.png" alt="Mahtab Kamali Logo" class="clean-logo">
             </div>
 
             <div class="hero-grid">
@@ -335,7 +336,7 @@
                     <span class="tag">Research · AI & Security</span>
                 </article>
                 <article class="project-card">
-                    <span class="edu-year">TryHackM Labs</span>
+                    <span class="edu-year">TryHackMe Labs</span>
                     <h3>TryHackMe Certifications & Labs</h3>
                     <p class="muted">تکمیل لابراتوارهای تخصصی در حوزه‌های SOC Level 1 و Cyber Defense برای ارتقای مهارت‌های عملی حمله و دفاع.</p>
                     <button class="cert-btn" style="margin-top: 12px;" onclick="openPdf('cert/thm-cert.jpg', 'TryHackMe')">مشاهده گواهی / مدرک</button>
@@ -384,7 +385,6 @@
         faButton.addEventListener("click", () => changeLanguage("fa"));
         enButton.addEventListener("click", () => changeLanguage("en"));
         
-        // تابع باز کردن فایل‌ها در تب جدید به صورت تمیز و بدون خطای تصویر شکسته
         function openPdf(src, title) {
             window.open(src, '_blank');
         }
