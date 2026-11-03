@@ -3,93 +3,43 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="رزومه و پورتفولیوی مهتاب کمالی در حوزه فناوری اطلاعات و امنیت سایبری">
     <title>مهتاب کمالی | پورتفو و رزومه شخصی</title>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Vazirmatn:wght@300;400;500;600;700;800;900&family=JetBrains+Mono:wght@400;500;600;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="style.css">
     <style>
-        .site-header {
-            display: flex;
-            justify-content: space-between;
-            align-items: center;
-            padding: 1.5rem 2rem;
-            background: rgba(11, 15, 25, 0.85);
-            backdrop-filter: blur(10px);
-            border-bottom: 1px solid rgba(0, 255, 204, 0.15);
-            position: sticky;
-            top: 0;
-            z-index: 1000;
-        }
-        .brand-container {
-            display: flex;
-            align-items: center;
-            gap: 12px;
-            text-decoration: none;
-        }
-        .brand-title {
-            font-family: 'JetBrains Mono', monospace;
-            font-size: 1.25rem;
-            font-weight: 700;
-            color: #ffffff;
-            letter-spacing: 1px;
-            text-shadow: 0 0 8px rgba(0, 255, 204, 0.4);
-        }
-        .brand-title span {
-            color: var(--neon-green, #00ffcc);
-        }
-        .clean-logo {
-            width: 250px;
-            max-width: 100%;
-            height: auto;
-            display: inline-block;
-            background: transparent;
-            border: none;
-            box-shadow: none;
-            padding: 0;
-            backdrop-filter: none;
+        .site-header { display: flex; justify-content: space-between; align-items: center; padding: 1.5rem 2rem; background: rgba(11, 15, 25, 0.85); backdrop-filter: blur(10px); border-bottom: 1px solid rgba(0, 255, 204, 0.15); position: sticky; top: 0; z-index: 1000; }
+        .brand-container { display: flex; align-items: center; gap: 12px; text-decoration: none; }
+        .brand-title { font-family: 'JetBrains Mono', monospace; font-size: 1.25rem; font-weight: 700; color: #ffffff; letter-spacing: 1px; text-shadow: 0 0 8px rgba(0, 255, 204, 0.4); }
+        .brand-title span { color: var(--neon-green, #00ffcc); }
+        .clean-logo { width: 250px; max-width: 100%; height: auto; display: inline-block; background: transparent; border: none; box-shadow: none; padding: 0; backdrop-filter: none; }
+        /* این خط به زور دکمه‌های گیت‌هاب و لینکدین را مخفی می‌کند */
+        .contact-links a[href*="github"], .contact-links a[href*="linkedin"], a[href*="github.com"], a[href*="linkedin.com"] {
+            display: none !important;
         }
     </style>
 </head>
-
 <body>
     <div class="cyber-motion-bg">
         <div class="grid-overlay"></div>
         <div class="cyber-wave"></div>
-        <div class="binary-rain">
-            <span style="left: 0%; animation-duration: 12s; animation-delay: 0s;">0<br>1<br>0<br>1<br>1<br>0<br>1<br>0<br>1<br>1<br>0<br>1<br>0<br>1<br>1</span>
-            <span style="left: 8%; animation-duration: 15s; animation-delay: 2s;">1<br>0<br>1<br>1<br>0<br>1<br>0<br>1<br>0<br>1<br>1<br>0<br>1<br>0<br>1</span>
-            <span style="left: 16%; animation-duration: 10s; animation-delay: 1s;">0<br>1<br>1<br>0<br>1<br>0<br>1<br>1<br>0<br>1<br>0<br>1<br>1<br>0<br>1</span>
-            <span style="left: 24%; animation-duration: 14s; animation-delay: 4s;">1<br>1<br>0<br>1<br>0<br>1<br>1<br>0<br>1<br>0<br>1<br>1<br>0<br>1<br>0</span>
-            <span style="left: 32%; animation-duration: 11s; animation-delay: 0.5s;">0<br>0<br>1<br>0<br>1<br>1<br>0<br>1<br>0<br>1<br>1<br>0<br>1<br>0<br>1</span>
-            <span style="left: 40%; animation-duration: 16s; animation-delay: 3s;">1<br>0<br>1<br>1<br>0<br>1<br>0<br>1<br>1<br>0<br>1<br>0<br>1<br>1<br>0</span>
-            <span style="left: 48%; animation-duration: 9s; animation-delay: 2.5s;">0<br>1<br>0<br>1<br>1<br>0<br>1<br>0<br>1<br>1<br>0<br>1<br>0<br>1<br>1</span>
-            <span style="left: 56%; animation-duration: 13s; animation-delay: 1.5s;">1<br>1<br>0<br>0<br>1<br>1<br>0<br>1<br>0<br>1<br>1<br>0<br>1<br>0<br>1</span>
-            <span style="left: 64%; animation-duration: 11s; animation-delay: 3.5s;">0<br>0<br>1<br>1<br>0<br>1<br>0<br>1<br>1<br>0<br>1<br>0<br>1<br>1<br>0</span>
-            <span style="left: 72%; animation-duration: 14s; animation-delay: 0.8s;">1<br>0<br>1<br>0<br>1<br>1<br>0<br>1<br>0<br>1<br>0<br>1<br>1<br>0<br>1</span>
-            <span style="left: 80%; animation-duration: 12s; animation-delay: 1.2s;">0<br>1<br>1<br>0<br>1<br>0<br>1<br>0<br>1<br>1<br>0<br>1<br>0<br>1<br>0</span>
-            <span style="left: 88%; animation-duration: 15s; animation-delay: 2.8s;">1<br>0<br>0<br>1<br>0<br>1<br>1<br>0<br>1<br>0<br>1<br>1<br>0<br>1<br>1</span>
-            <span style="left: 96%; animation-duration: 10s; animation-delay: 0.3s;">0<br>1<br>0<br>1<br>1<br>0<br>0<br>1<br>1<br>0<br>1<br>0<br>1<br>0<br>1</span>
-        </div>
     </div>
     <div class="mouse-glow" id="mouseGlow"></div>
     
     <div class="top-bar-wrapper">
         <header class="site-header">
-            <a class="brand-container" href="#home">
-                <span class="brand-title">MAHTAB<span>.</span></span>
-            </a>
-            <nav aria-label="Main navigation" class="main-nav">
-                <a href="#skills" data-fa="مهارت‌ها" data-en="Skills">مهارت‌ها</a>
-                <a href="#experience" data-fa="سوابق کاری" data-en="Experience">سوابق کاری</a>
-                <a href="#certifications" data-fa="گواهی‌نامه‌ها" data-en="Certifications">گواهی‌نامه‌ها</a>
-                <a href="#education" data-fa="تحصیلات" data-en="Education">تحصیلات</a>
-                <a href="#projects" data-fa="مقاله و لابراتوارها" data-en="Papers & Labs">مقاله و لابراتوارها</a>
-                <a href="#contact" data-fa="ارتباط" data-en="Contact">ارتباط</a>
+            <a class="brand-container" href="#home"><span class="brand-title">MAHTAB<span>.</span></span></a>
+            <nav class="main-nav">
+                <a href="#skills">مهارت‌ها</a>
+                <a href="#experience">سوابق کاری</a>
+                <a href="#certifications">گواهی‌نامه‌ها</a>
+                <a href="#education">تحصیلات</a>
+                <a href="#projects">مقاله و لابراتوارها</a>
+                <a href="#contact">ارتباط</a>
             </nav>
             <div class="header-actions">
-                <div class="language-switch" aria-label="انتخاب زبان">
+                <div class="language-switch">
                     <button id="fa-btn" type="button" class="active">FA</button>
                     <button id="en-btn" type="button">EN</button>
                 </div>
@@ -102,32 +52,18 @@
             <div style="text-align: center; margin-bottom: 2.5rem;">
                 <img src="logo.png" alt="Mahtab Kamali Logo" class="clean-logo">
             </div>
-
             <div class="hero-grid">
                 <div class="hero-content">
-                    <h1 class="gradient-text" data-fa="فاطمه کمالی روستا" data-en="Fatemeh Kamaliroosta">فاطمه کمالی روستا</h1>
-                    <h2 class="hero-subtitle" data-fa="کارشناس فناوری اطلاعات | تحلیلگر امنیت (SOC Tier 1)" data-en="IT Specialist | SOC Tier 1 Analyst">
-                        کارشناس فناوری اطلاعات | تحلیلگر امنیت (SOC Tier 1)
-                    </h2>
-                    <p class="hero-desc" data-fa="کارشناس فناوری اطلاعات با بیش از ۲.۵ سال سابقه کار در زمینه پشتیبانی سیستم‌ها، عیب‌یابی مشکلات شبکه و کار با سرویس‌های Active Directory، MikroTik و FortiGate. آشنا با مبانی سیستم‌عامل‌های ویندوز و لینوکس. دارای آموزش تخصصی در حوزه SOC Tier 1، SIEM (Splunk) و تحلیل لاگ، و علاقه‌مند به توسعه مهارت‌ها و فعالیت تخصصی در مرکز عملیات امنیت (SOC)."
-                        data-en="IT Specialist with over 2.5 years of experience in system support, network troubleshooting, and working with Active Directory, MikroTik, and FortiGate services. Familiar with Windows and Linux operating systems. Specialized training in SOC Tier 1, SIEM (Splunk), and log analysis, with an interest in developing skills and working professionally in a Security Operations Center (SOC).">
-                        کارشناس فناوری اطلاعات با بیش از ۲.۵ سال سابقه کار در زمینه پشتیبانی سیستم‌ها، عیب‌یابی مشکلات شبکه و کار با سرویس‌های Active Directory، MikroTik و FortiGate. آشنا با مبانی سیستم‌عامل‌های ویندوز و لینوکس. دارای آموزش تخصصی در حوزه SOC Tier 1، SIEM (Splunk) و تحلیل لاگ، و علاقه‌مند به توسعه مهارت‌ها و فعالیت تخصصی در مرکز عملیات امنیت (SOC).
-                    </p>
+                    <h1 class="gradient-text">فاطمه کمالی روستا</h1>
+                    <h2 class="hero-subtitle">کارشناس فناوری اطلاعات | تحلیلگر امنیت (SOC Tier 1)</h2>
+                    <p class="hero-desc">کارشناس فناوری اطلاعات با بیش از ۲.۵ سال سابقه کار در زمینه پشتیبانی سیستم‌ها، عیب‌یابی مشکلات شبکه و کار با سرویس‌های Active Directory، MikroTik و FortiGate. آشنا با مبانی سیستم‌عامل‌های ویندوز و لینوکس. دارای آموزش تخصصی در حوزه SOC Tier 1، SIEM (Splunk) و تحلیل لاگ، و علاقه‌مند به توسعه مهارت‌ها و فعالیت تخصصی در مرکز عملیات امنیت (SOC).</p>
                     <div class="hero-actions">
-                        <a class="primary-link" href="#certifications">
-                            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="8" r="7"/><polyline points="8.21 13.89 7 23 12 20 17 23 15.79 13.88"/></svg>
-                            <span data-fa="مشاهده مدارک و گواهی‌ها" data-en="View Certificates">مشاهده مدارک و گواهی‌ها</span>
-                        </a>
-                        <a class="secondary-link" href="#projects" data-fa="مقاله و لابراتوارها" data-en="Papers & Labs">مقاله و لابراتوارها</a>
+                        <a class="primary-link" href="#certifications">مشاهده مدارک و گواهی‌ها</a>
+                        <a class="secondary-link" href="#projects">مقاله و لابراتوارها</a>
                     </div>
                 </div>
                 <div class="terminal-window" dir="ltr">
-                    <div class="terminal-header">
-                        <span class="t-dot red"></span>
-                        <span class="t-dot yellow"></span>
-                        <span class="t-dot green"></span>
-                        <span class="t-title">soc-analyst@mahtabkamali:~</span>
-                    </div>
+                    <div class="terminal-header"><span class="t-dot red"></span><span class="t-dot yellow"></span><span class="t-dot green"></span><span class="t-title">soc-analyst@mahtabkamali:~</span></div>
                     <div class="terminal-body">
                         <p><span class="prompt">$</span> whoami</p>
                         <p class="t-out">Fatemeh (Mahtab) Kamaliroosta — IT & Support Specialist</p>
@@ -143,163 +79,76 @@
         <section id="skills" class="content-section">
             <div class="section-header">
                 <span class="section-tag">01 // SKILLS</span>
-                <h2 data-fa="مهارت‌های فنی و تخصصی" data-en="Technical Skills">مهارت‌های فنی و تخصصی</h2>
+                <h2>مهارت‌های فنی و تخصصی</h2>
             </div>
             <div class="skills-grid" style="grid-template-columns: repeat(3, 1fr);">
                 <article class="skill-card">
-                    <h3 data-fa="امنیت سایبری و SOC" data-en="Cybersecurity & SOC">امنیت سایبری و SOC</h3>
-                    <div class="skill-pills">
-                        <span>SIEM Fundamentals</span><span>Splunk</span><span>Log Analysis</span><span>MITRE ATT&CK</span><span>IDS/IPS</span><span>Windows Event Logs</span>
-                    </div>
+                    <h3>امنیت سایبری و SOC</h3>
+                    <div class="skill-pills"><span>SIEM Fundamentals</span><span>Splunk</span><span>Log Analysis</span><span>MITRE ATT&CK</span><span>IDS/IPS</span><span>Windows Event Logs</span></div>
                 </article>
                 <article class="skill-card">
-                    <h3 data-fa="شبکه و زیرساخت" data-en="Networking & Infrastructure">شبکه و زیرساخت</h3>
-                    <div class="skill-pills">
-                        <span>FortiGate Firewall</span><span>MikroTik</span><span>Cisco CCNA/CCNP</span><span>TCP/IP</span><span>DNS / DHCP</span>
-                    </div>
+                    <h3>شبکه و زیرساخت</h3>
+                    <div class="skill-pills"><span>FortiGate Firewall</span><span>MikroTik</span><span>Cisco CCNA/CCNP</span><span>TCP/IP</span><span>DNS / DHCP</span></div>
                 </article>
                 <article class="skill-card">
-                    <h3 data-fa="سیستم‌عامل و مدیریت کاربران" data-en="Systems & Identity">سیستم‌عامل و مدیریت کاربران</h3>
-                    <div class="skill-pills">
-                        <span>Active Directory</span><span>Windows Server</span><span>Linux Essentials</span>
-                    </div>
+                    <h3>سیستم‌عامل و مدیریت کاربران</h3>
+                    <div class="skill-pills"><span>Active Directory</span><span>Windows Server</span><span>Linux Essentials</span></div>
                 </article>
             </div>
         </section>
 
         <section id="experience" class="content-section">
-            <div class="section-header">
-                <span class="section-tag">02 // EXPERIENCE</span>
-                <h2 data-fa="سوابق کاری" data-en="Work Experience">سوابق کاری</h2>
-            </div>
+            <div class="section-header"><span class="section-tag">02 // EXPERIENCE</span><h2>سوابق کاری</h2></div>
             <div class="timeline-container">
                 <article class="timeline-card">
                     <div class="timeline-dot"></div>
-                    <div class="timeline-header">
-                        <h3 data-fa="کارشناس فناوری اطلاعات (IT)" data-en="IT Specialist">کارشناس فناوری اطلاعات (IT)</h3>
-                        <span class="timeline-date" data-fa="شهریور ۱۴۰۴ تا کنون" data-en="Sep 2025 – Present">شهریور ۱۴۰۴ تا کنون</span>
-                    </div>
-                    <p class="company-name" data-fa="کارخانه صنایع غذایی شیبا — کرج" data-en="Shiba Food Industries — Karaj">کارخانه صنایع غذایی شیبا — کرج</p>
+                    <div class="timeline-header"><h3>کارشناس فناوری اطلاعات (IT)</h3><span class="timeline-date">شهریور ۱۴۰۴ تا کنون</span></div>
+                    <p class="company-name">کارخانه صنایع غذایی شیبا — کرج</p>
                     <ul>
-                        <li data-fa="ارائه پشتیبانی فنی سیستم‌ها، کاربران و زیرساخت شبکه در سطح مجموعه" data-en="Providing technical support for systems, users, and network infrastructure">ارائه پشتیبانی فنی سیستم‌ها، کاربران و زیرساخت شبکه در سطح مجموعه</li>
-                        <li data-fa="نظارت و اعمال تغییرات در FortiGate Firewall شامل مدیریت و به‌روزرسانی قوانین" data-en="Monitoring and updating FortiGate Firewall rules">نظارت و اعمال تغییرات در FortiGate Firewall شامل مدیریت و به‌روزرسانی قوانین</li>
-                        <li data-fa="همکاری در مدیریت حساب‌های کاربری Active Directory و سطوح دسترسی" data-en="Managing Active Directory user accounts and access permissions">همکاری در مدیریت حساب‌های کاربری Active Directory و سطوح دسترسی</li>
+                        <li>ارائه پشتیبانی فنی سیستم‌ها، کاربران و زیرساخت شبکه در سطح مجموعه</li>
+                        <li>نظارت و اعمال تغییرات در FortiGate Firewall شامل مدیریت و به‌روزرسانی قوانین</li>
+                        <li>همکاری در مدیریت حساب‌های کاربری Active Directory و سطوح دسترسی</li>
                     </ul>
                 </article>
                 <article class="timeline-card">
                     <div class="timeline-dot"></div>
-                    <div class="timeline-header">
-                        <h3 data-fa="کارشناس IT" data-en="IT Specialist">کارشناس IT</h3>
-                        <span class="timeline-date" data-fa="تیر ۱۴۰۳ تا مرداد ۱۴۰۳" data-en="Jul – Aug 2024">تیر ۱۴۰۳ تا مرداد ۱۴۰۳</span>
-                    </div>
-                    <p class="company-name" data-fa="شرکت سریع ترابر ماهان (ماهکس)" data-en="Mahex">شرکت سریع ترابر ماهان (ماهکس)</p>
-                    <ul>
-                        <li data-fa="ارائه پشتیبانی برای سیستم‌ها و مودم‌ها و رفع مشکلات کاربران" data-en="Providing support for computers, modems and resolving user issues">ارائه پشتیبانی برای سیستم‌ها و مودم‌ها و رفع مشکلات کاربران</li>
-                    </ul>
+                    <div class="timeline-header"><h3>کارشناس IT</h3><span class="timeline-date">تیر ۱۴۰۳ تا مرداد ۱۴۰۳</span></div>
+                    <p class="company-name">شرکت سریع ترابر ماهان (ماهکس)</p>
+                    <ul><li>ارائه پشتیبانی برای سیستم‌ها و مودم‌ها و رفع مشکلات کاربران</li></ul>
                 </article>
                 <article class="timeline-card">
                     <div class="timeline-dot"></div>
-                    <div class="timeline-header">
-                        <h3 data-fa="پشتیبانی فناوری اطلاعات (IT Help Desk)" data-en="IT Help Desk">پشتیبانی فناوری اطلاعات (IT Help Desk)</h3>
-                        <span class="timeline-date" data-fa="بهمن ۱۴۰۱ تا خرداد ۱۴۰۳" data-en="Feb 2023 – Jun 2024">بهمن ۱۴۰۱ تا خرداد ۱۴۰۳</span>
-                    </div>
-                    <p class="company-name" data-fa="فروشگاه قلم" data-en="Ghalam Store">فروشگاه قلم</p>
-                    <ul>
-                        <li data-fa="پشتیبانی سیستم‌ها، چاپگرها، پایانه‌های فروش (POS) و مودم‌ها" data-en="Supporting computers, printers, POS terminals and modems">پشتیبانی سیستم‌ها، چاپگرها، پایانه‌های فروش (POS) و مودم‌ها</li>
-                    </ul>
+                    <div class="timeline-header"><h3>پشتیبانی فناوری اطلاعات (IT Help Desk)</h3><span class="timeline-date">بهمن ۱۴۰۱ تا خرداد ۱۴۰۳</span></div>
+                    <p class="company-name">فروشگاه قلم</p>
+                    <ul><li>پشتیبانی سیستم‌ها، چاپگرها، پایانه‌های فروش (POS) و مودم‌ها</li></ul>
                 </article>
             </div>
         </section>
 
         <section id="certifications" class="content-section">
-            <div class="section-header">
-                <span class="section-tag">03 // CERTIFICATIONS</span>
-                <h2 data-fa="مدارک و گواهی‌نامه‌ها" data-en="Certifications">مدارک و گواهی‌نامه‌ها</h2>
-            </div>
-            <p data-fa="برای مشاهده فایل PDF هر گواهی‌نامه روی دکمه کلیک کنید." data-en="Click view certificate to open PDF.">برای مشاهده فایل PDF هر گواهی‌نامه روی دکمه کلیک کنید.</p>
+            <div class="section-header"><span class="section-tag">03 // CERTIFICATIONS</span><h2>مدارک و گواهی‌نامه‌ها</h2></div>
+            <p>برای مشاهده فایل PDF هر گواهی‌نامه روی دکمه کلیک کنید.</p>
             <div class="certs-grid">
-                <article class="cert-card">
-                    <div class="cert-body">
-                        <span class="cert-issuer">فان آوران آنیسا | ۱۴۰۵</span>
-                        <h3>Linux Essentials</h3>
-                        <p class="cert-meta">Self Study</p>
-                    </div>
-                </article>
-                <article class="cert-card">
-                    <div class="cert-body">
-                        <span class="cert-issuer">آموزشگاه کندو | ۱۴۰۴</span>
-                        <h3>SOC Tier 1 (SIEM - Splunk - SEC450 - SEC504 - Security+)</h3>
-                        <p class="cert-meta">طول دوره: ۲۴۰ ساعت</p>
-                    </div>
-                    <button class="cert-btn" onclick="openPdf('cert/SOC.pdf', 'SOC Tier 1')">مشاهده مدرک</button>
-                </article>
-                <article class="cert-card">
-                    <div class="cert-body">
-                        <span class="cert-issuer">آموزشگاه کندو | ۱۴۰۴</span>
-                        <h3>MCSA L1 & L2 (MCSE)</h3>
-                        <p class="cert-meta">طول دوره: ۱۲۰ ساعت</p>
-                    </div>
-                    <button class="cert-btn" onclick="openPdf('cert/MCSE.pdf', 'MCSE')">مشاهده مدرک</button>
-                </article>
-                <article class="cert-card">
-                    <div class="cert-body">
-                        <span class="cert-issuer">آموزشگاه کندو | ۱۴۰۳</span>
-                        <h3>MTCNA MikroTik</h3>
-                        <p class="cert-meta">طول دوره: بوت کمپ ۳ روزه</p>
-                    </div>
-                    <button class="cert-btn" onclick="openPdf('cert/MTCNA.pdf', 'MTCNA')">مشاهده مدرک</button>
-                </article>
-                <article class="cert-card">
-                    <div class="cert-body">
-                        <span class="cert-issuer">مجتمع فنی تهران | ۱۴۰۲</span>
-                        <h3>CCNA Cisco</h3>
-                        <p class="cert-meta">طول دوره: ۱۲۰ ساعت</p>
-                    </div>
-                    <button class="cert-btn" onclick="openPdf('cert/CCNA.pdf', 'CCNA')">مشاهده مدرک</button>
-                </article>
-                <article class="cert-card">
-                    <div class="cert-body">
-                        <span class="cert-issuer">مجتمع فنی تهران | ۱۴۰۲</span>
-                        <h3>CCNP Cisco</h3>
-                        <p class="cert-meta">طول دوره: ۲۴۰ ساعت</p>
-                    </div>
-                    <button class="cert-btn" onclick="openPdf('cert/CCNP.pdf', 'CCNP')">مشاهده مدرک</button>
-                </article>
-                <article class="cert-card">
-                    <div class="cert-body">
-                        <span class="cert-issuer">مجتمع فنی تهران | ۱۴۰۱</span>
-                        <h3>Network+</h3>
-                        <p class="cert-meta">طول دوره: ۳۰ ساعت</p>
-                    </div>
-                    <button class="cert-btn" onclick="openPdf('cert/NETWORK+.pdf', 'Network+')">مشاهده مدرک</button>
-                </article>
+                <article class="cert-card"><div class="cert-body"><span class="cert-issuer">فان آوران آنیسا | ۱۴۰۵</span><h3>Linux Essentials</h3><p class="cert-meta">Self Study</p></div></article>
+                <article class="cert-card"><div class="cert-body"><span class="cert-issuer">آموزشگاه کندو | ۱۴۰۴</span><h3>SOC Tier 1 (SIEM - Splunk - SEC450 - SEC504 - Security+)</h3><p class="cert-meta">طول دوره: ۲۴۰ ساعت</p></div><button class="cert-btn" onclick="openPdf('cert/SOC.pdf', 'SOC Tier 1')">مشاهده مدرک</button></article>
+                <article class="cert-card"><div class="cert-body"><span class="cert-issuer">آموزشگاه کندو | ۱۴۰۴</span><h3>MCSA L1 & L2 (MCSE)</h3><p class="cert-meta">طول دوره: ۱۲۰ ساعت</p></div><button class="cert-btn" onclick="openPdf('cert/MCSE.pdf', 'MCSE')">مشاهده مدرک</button></article>
+                <article class="cert-card"><div class="cert-body"><span class="cert-issuer">آموزشگاه کندو | ۱۴۰۳</span><h3>MTCNA MikroTik</h3><p class="cert-meta">طول دوره: بوت کمپ ۳ روزه</p></div><button class="cert-btn" onclick="openPdf('cert/MTCNA.pdf', 'MTCNA')">مشاهده مدرک</button></article>
+                <article class="cert-card"><div class="cert-body"><span class="cert-issuer">مجتمع فنی تهران | ۱۴۰۲</span><h3>CCNA Cisco</h3><p class="cert-meta">طول دوره: ۱۲۰ ساعت</p></div><button class="cert-btn" onclick="openPdf('cert/CCNA.pdf', 'CCNA')">مشاهده مدرک</button></article>
+                <article class="cert-card"><div class="cert-body"><span class="cert-issuer">مجتمع فنی تهران | ۱۴۰۲</span><h3>CCNP Cisco</h3><p class="cert-meta">طول دوره: ۲۴۰ ساعت</p></div><button class="cert-btn" onclick="openPdf('cert/CCNP.pdf', 'CCNP')">مشاهده مدرک</button></article>
+                <article class="cert-card"><div class="cert-body"><span class="cert-issuer">مجتمع فنی تهران | ۱۴۰۱</span><h3>Network+</h3><p class="cert-meta">طول دوره: ۳۰ ساعت</p></div><button class="cert-btn" onclick="openPdf('cert/NETWORK+.pdf', 'Network+')">مشاهده مدرک</button></article>
             </div>
         </section>
 
         <section id="education" class="content-section">
-            <div class="section-header">
-                <span class="section-tag">04 // EDUCATION</span>
-                <h2 data-fa="تحصیلات" data-en="Education">تحصیلات</h2>
-            </div>
+            <div class="section-header"><span class="section-tag">04 // EDUCATION</span><h2>تحصیلات</h2></div>
             <div class="edu-grid">
-                <article class="edu-card">
-                    <span class="edu-year">در حال تحصیل از ۱۴۰۴</span>
-                    <h3>کارشناسی ارتباطات و فناوری اطلاعات (ICT)</h3>
-                    <p class="muted">دانشگاه علمی و کاربردی عالیفرد</p>
-                </article>
-                <article class="edu-card">
-                    <span class="edu-year">۱۳۹۶ تا ۱۳۹۹</span>
-                    <h3>کاردانی مهندسی کامپیوتر ـ نرم‌افزار</h3>
-                    <p class="muted">دانشگاه سراسری ۱۷ شهریور</p>
-                </article>
+                <article class="edu-card"><span class="edu-year">در حال تحصیل از ۱۴۰۴</span><h3>کارشناسی ارتباطات و فناوری اطلاعات (ICT)</h3><p class="muted">دانشگاه علمی و کاربردی عالیفرد</p></article>
+                <article class="edu-card"><span class="edu-year">۱۳۹۶ تا ۱۳۹۹</span><h3>کاردانی مهندسی کامپیوتر ـ نرم‌افزار</h3><p class="muted">دانشگاه سراسری ۱۷ شهریور</p></article>
             </div>
         </section>
 
         <section id="projects" class="content-section">
-            <div class="section-header">
-                <span class="section-tag">05 // PAPERS & LABS</span>
-                <h2 data-fa="مقاله و لابراتوارها" data-en="Papers & Labs">مقاله و لابراتوارها</h2>
-            </div>
+            <div class="section-header"><span class="section-tag">05 // PAPERS & LABS</span><h2>مقاله و لابراتوارها</h2></div>
             <div class="projects-grid">
                 <article class="project-card highlight-card">
                     <span class="edu-year">مقاله علمی پژوهشی</span>
@@ -318,16 +167,11 @@
         </section>
 
         <section id="contact" class="content-section">
-            <div class="section-header">
-                <span class="section-tag">06 // CONTACT</span>
-                <h2 data-fa="ارتباط با من" data-en="Get In Touch">ارتباط با من</h2>
-            </div>
+            <div class="section-header"><span class="section-tag">06 // CONTACT</span><h2>ارتباط با من</h2></div>
             <p>ساکن کرج (با امکان اسکان و همکاری در تهران). برای همکاری می‌توانید از راه‌های زیر در ارتباط باشید:</p>
-            <div class="contact-links">
+            <div class="contact-links" style="display: flex; justify-content: center; gap: 2rem; flex-wrap: wrap; margin-top: 1.5rem;">
                 <a href="mailto:Kamaliroostamahtab@gmail.com" class="contact-item">Kamaliroostamahtab@gmail.com</a>
                 <a href="tel:09362683588" class="contact-item" dir="ltr">0936 268 3588</a>
-                <a href="https://github.com/Mahtab-Kamali" target="_blank" rel="noopener noreferrer" class="contact-item">GitHub</a>
-                <a href="https://linkedin.com/" target="_blank" rel="noopener noreferrer" class="contact-item">LinkedIn</a>
             </div>
         </section>
     </main>
@@ -356,10 +200,7 @@
         }
         faButton.addEventListener("click", () => changeLanguage("fa"));
         enButton.addEventListener("click", () => changeLanguage("en"));
-        
-        function openPdf(src, title) {
-            window.open(src, '_blank');
-        }
+        function openPdf(src, title) { window.open(src, '_blank'); }
     </script>
 </body>
 </html>
