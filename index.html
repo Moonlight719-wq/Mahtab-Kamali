@@ -39,17 +39,17 @@
         .brand-title span {
             color: var(--neon-green, #00ffcc);
         }
+        /* حذف کامل کادر، بک‌گراند و حاشیه‌ها از دور لوگو */
         .clean-logo {
             width: 250px;
             max-width: 100%;
             height: auto;
             display: inline-block;
-            border-radius: 20px;
-            border: 1px solid rgba(0, 255, 204, 0.4);
-            box-shadow: 0 0 25px rgba(0, 255, 204, 0.3);
-            background: rgba(11, 15, 25, 0.6);
-            padding: 10px;
-            backdrop-filter: blur(5px);
+            background: transparent;
+            border: none;
+            box-shadow: none;
+            padding: 0;
+            backdrop-filter: none;
         }
     </style>
 </head>
@@ -100,7 +100,6 @@
 
     <main>
         <section id="home" class="hero" style="padding-top: 2rem;">
-            <!-- استفاده از لوگوی اصلی با نام logo.png -->
             <div style="text-align: center; margin-bottom: 2.5rem;">
                 <img src="logo.png" alt="Mahtab Kamali Logo" class="clean-logo">
             </div>
